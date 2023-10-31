@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway",sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: #1D1F22;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.selected {
+  border-bottom: 2px solid #5ECE7B;
+  color: #5ECE7B;
+  font-weight: 600 !important;
+}
