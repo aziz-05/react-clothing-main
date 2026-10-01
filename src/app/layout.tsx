@@ -19,8 +19,8 @@ export const viewport: Viewport = { themeColor: '#f6f3ee' };
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const currency = await currentCurrency();
   return (
-    <html lang='en' className={`${inter.variable} ${fraunces.variable}`}>
-      <body>
+    <html lang='en' className={`${inter.variable} ${fraunces.variable}`} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <Providers>
           <Header currency={currency} />
           <main className='min-h-[60vh]'>{children}</main>
